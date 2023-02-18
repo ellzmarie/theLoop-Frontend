@@ -1,6 +1,6 @@
 # theLOOP
 
-### theLOOP is a full CRUD web application for people who love hella dope music and fashion. 
+### theLOOP is a full CRUD web application for people who love hella good music and fashion. 
 ---
 ### SCREENSHOTS GO HERE
 #### ![banner](./img/Banner.jpeg)
