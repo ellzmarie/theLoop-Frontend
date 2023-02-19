@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital@0;1&display=swap');
 body {
   margin: 0;
   padding: 0;
@@ -35,13 +34,11 @@ body {
 
 /* Navbar links */
 .topnav a {
-  display: flex;
+  display: block;
+  float: left;
   color: #000000;
-  text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Links - change color on hover */
