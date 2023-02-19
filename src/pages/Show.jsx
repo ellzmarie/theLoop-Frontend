@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 
-export default function Show({ artist, updateArtist, deleteArtist }) {
+export default function Show({ artists, updateArtist, deleteArtist }) {
   const { id } = useParams();
-  const artist = artist.find((person) => parseInt(artist.id) === parseInt(id));
+  const artist = artists.find((artist) => parseInt(artist.id) === parseInt(id));
   const navigate = useNavigate();
 
   const [editForm, setEditForm] = useState(artist);
