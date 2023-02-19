@@ -1,7 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital@1&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Bebas Neue', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  height: 4em;
+  background-color: #000000;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app-title {
+  display: flex;
+}
+
+.app-name {
+  font-size: xx-large;
+  color: #ffffff;
+  font-family: 'Bebas Neue', cursive;
+}
+
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+/* Navbar links */
+.topnav a {
+  display: flex;
+  color: #000000;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
