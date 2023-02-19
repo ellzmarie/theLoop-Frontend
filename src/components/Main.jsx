@@ -5,7 +5,7 @@ import Show from "../pages/Show";
 
 
 // This is the moment you have been waiting for, lets connect Django to React!
-const URL = 'http://localhost:8000/people/'
+const URL = 'http://localhost:8000/artists/'
 
 
 export default function Main() {
