@@ -27,7 +27,8 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
   };
 
   return (
-    <div className="artist">
+    <div className="artist-show">
+      <div className="show-info">
       <h1>{artist?.name}</h1>
       <h2>{artist?.title}</h2>
       <img src={artist?.image} alt={artist?.name} />
@@ -58,6 +59,7 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
         />
         <button type="submit">Add Artist</button>
       </form>
+      </div>
     </div>
   );
 }

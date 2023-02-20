@@ -69,7 +69,7 @@ export default function Main() {
           path="/artist/:id"
           element={
             <Show
-              artist={artist}
+              artists={artist}
               deleteArtist={deleteArtist}
               updateArtist={updateArtist}
             />

@@ -12,7 +12,6 @@ function Header(props) {
     <div className="topnav">
       <Link to="/artist/:id">music</Link>
       <Link to="#">fashion</Link>
-      <Link to="#">footwear</Link>
       <Link to="#">beauty</Link>
       <Link to="#">home stuff</Link>
     </div>

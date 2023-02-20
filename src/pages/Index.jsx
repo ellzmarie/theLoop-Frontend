@@ -30,12 +30,13 @@ export default function Index({ artist, createArtist }) {
   // loaded function
   const loaded = () =>
     artist.map((artist) => (
-      <div key={artist._id} className="artist">
+      <div key={artist.id} className="artist">
         <Link to={`/artist/${artist.id}`}>
           <h1>{artist.name}</h1>
         </Link>
-        <img src={artist.image} alt={artist.name} />
-        <h3>{artist.title}</h3>
+        <img className="artist-image" src={artist.image} alt={artist.name} />
+        <h3>{artist.link}</h3>
+        <h3>{artist.description}</h3>
       </div>
     ));
 
@@ -60,11 +61,18 @@ export default function Index({ artist, createArtist }) {
         />
         <input
           type="text"
-          name="title"
-          placeholder="title"
-          value={form.title}
+          name="link"
+          placeholder="link"
+          value={form.link}
           onChange={handleChange}
         />
+        <input
+          type="text"
+          name="description"
+          placeholder="description"
+          value={form.description}
+          onChange={handleChange}
+        />        
         <input type="submit" value="Submit"/>
       </form>
       {artist ? loaded() : loading()}
