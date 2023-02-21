@@ -30,35 +30,44 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
     <div className="artist-show">
       <div className="show-info">
       <h1>{artist?.name}</h1>
-      <h2>{artist?.title}</h2>
+      {/* <h2>{artist?.title}</h2> */}
       <img src={artist?.image} alt={artist?.name} />
-      <button id="DELETE" onClick={removeArtist}>
-        Delete
-      </button>
+
       <form onSubmit={handleSubmit}>
-        <input
+        <p>name: <input
           type="text"
           name="name"
           placeholder="name"
           value={editForm?.name}
           onChange={handleChange}
-        />
-        <input
+        /></p>
+        <p>image link: <input
           type="text"
           name="image"
           placeholder="image"
           value={editForm?.image}
           onChange={handleChange}
-        />
-        <input
+        /></p>
+        <p>date: <input
           type="text"
-          name="title"
-          placeholder="title"
-          value={editForm?.title}
+          name="date"
+          placeholder="release date"
+          value={editForm?.date}
           onChange={handleChange}
-        />
-        <button type="submit">Add Artist</button>
+        /></p>
+        <p>artist info: <input
+          className="textbox" 
+          type="text"
+          name="description"
+          placeholder="artist info"
+          value={editForm?.description}
+          onChange={handleChange}
+        /></p>
+        <button type="submit">Update Artist</button>
       </form>
+      <p><button id="DELETE" onClick={removeArtist}>
+        Delete
+      </button></p>
       </div>
     </div>
   );
