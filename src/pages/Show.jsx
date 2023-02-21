@@ -73,7 +73,7 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
                   onChange={handleChange}
                 /></p>
                 <p>category: <input
-                  className="textbox"
+                  className="text"
                   type="text"
                   name="category"
                   placeholder="enter category"
