@@ -80,7 +80,7 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
                   value={editForm?.category}
                   onChange={handleChange}
                 /></p>
-                <button type="submit">update Artist</button>
+                <button type="submit">update</button>
 
                 <button id="DELETE" onClick={removeArtist}>
                   delete
