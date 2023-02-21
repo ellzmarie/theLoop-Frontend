@@ -27,47 +27,59 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
   };
 
   return (
-    <div className="artist-show">
-      <div className="show-info">
-      <h1>{artist?.name}</h1>
-      {/* <h2>{artist?.title}</h2> */}
-      <img src={artist?.image} alt={artist?.name} />
+    <div className="main-content">
+      <div className="wrapper">
+        <h1 className='latest'>{artist?.name}</h1>
+        <img className='artist-img' src={artist?.image} alt={artist?.name} />
+          <h4 className='artist-details'>{artist?.release_date}</h4>
+          <p>{artist?.description}</p>
+      </div>
+      <hr />
+      <p></p>
 
-      <form onSubmit={handleSubmit}>
-        <p>name: <input
-          type="text"
-          name="name"
-          placeholder="name"
-          value={editForm?.name}
-          onChange={handleChange}
-        /></p>
-        <p>image link: <input
-          type="text"
-          name="image"
-          placeholder="image"
-          value={editForm?.image}
-          onChange={handleChange}
-        /></p>
-        <p>date: <input
-          type="text"
-          name="date"
-          placeholder="release date"
-          value={editForm?.date}
-          onChange={handleChange}
-        /></p>
-        <p>artist info: <input
-          className="textbox" 
-          type="text"
-          name="description"
-          placeholder="artist info"
-          value={editForm?.description}
-          onChange={handleChange}
-        /></p>
-        <button type="submit">Update Artist</button>
-      </form>
-      <p><button id="DELETE" onClick={removeArtist}>
-        Delete
-      </button></p>
+      <div className='main-content'>
+        <div className='wrapper'>
+          <div className='latest-grid'>
+            <div className='latest-grid-item one'>
+
+              <form onSubmit={handleSubmit}>
+                <p>name: <input
+                  type="text"
+                  name="name"
+                  placeholder="enter name"
+                  value={editForm?.name}
+                  onChange={handleChange}
+                /></p>
+                <p>image link: <input
+                  type="text"
+                  name="image"
+                  placeholder="enter image link"
+                  value={editForm?.image}
+                  onChange={handleChange}
+                /></p>
+                <p>date: <input
+                  type="text"
+                  name="release_date"
+                  placeholder="enter release date"
+                  value={editForm?.release_date}
+                  onChange={handleChange}
+                /></p>
+                <p>artist info: <input
+                  className="textbox"
+                  type="text"
+                  name="description"
+                  placeholder="enter artist info"
+                  value={editForm?.description}
+                  onChange={handleChange}
+                /></p>
+                <button type="submit">update Artist</button>
+              </form>
+              <button id="DELETE" onClick={removeArtist}>
+                delete
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

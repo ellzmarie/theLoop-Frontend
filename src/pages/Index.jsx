@@ -5,7 +5,7 @@ export default function Index({ artist, createArtist }) {
   const [form, setForm] = useState({
     name: "",
     image: "",
-    date: "",
+    release_date: "",
     description: "",
   });
 
@@ -22,7 +22,7 @@ export default function Index({ artist, createArtist }) {
     setForm({
       name: "",
       image: "",
-      date: "",
+      release_date: "",
       description: "",
     });
   };
@@ -32,16 +32,16 @@ export default function Index({ artist, createArtist }) {
     artist.map((artist) => (
       <div className='main-content'>
         <div className='wrapper'>
-          <div key={artist.id} className="artist">
-            <Link to={`/artist/${artist.id}`}>
-              <h1 className='latest'>{artist.name}</h1>
-            </Link>
+          <div key={artist.id}>
             <div className='latest-grid'>
-              <div className='latest-grid-item one'>
-                <img className="artist-image" src={artist.image} alt={artist.name} />
-                {/* <h3>{artist.link}</h3> */}
-                <h3>{artist.date}</h3>
-                <h2>{artist.description}</h2>
+              <div className='latest-grid-item'>
+                <Link to={`/artist/${artist.id}`}>
+                  <h2 className='latest-grid'>{artist.name}</h2>
+                </Link>
+                <img src={artist.image} alt={artist.name} />
+                <h3>{artist.release_date}</h3>
+                <hr />
+                <h4>{artist.description}</h4>
               </div>
             </div>
           </div>
@@ -70,9 +70,9 @@ export default function Index({ artist, createArtist }) {
         />
         <input
           type="text"
-          name="date"
+          name="release_date"
           placeholder="date"
-          value={form.date}
+          value={form.release_date}
           onChange={handleChange}
         />
         <input

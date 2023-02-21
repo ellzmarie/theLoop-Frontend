@@ -58,16 +58,17 @@ body {
 .topnav a:hover {
   background-color: #000000;
   color: #ffffff;
+
 }
 
-.artist-image {
+/* .artist-image {
   display: flex;
-  /* margin-left:33%; */
+  margin-left:33%;
   max-width: 450px;
   max-height: 450px;
-}
+} */
 
-.column {
+/* .column {
   float: left;
   width: 25%;
   padding: 5px 5px 5px 80px;
@@ -76,9 +77,9 @@ body {
 
 .show-info {
   margin-left: 38%
-}
+} */
 
-.artist {
+/* .artist {
   color:rgb(0, 0, 0);
   display: inline-flex;
   font-size: medium;
@@ -86,16 +87,16 @@ body {
   justify-content: space-around;
   height:17%;
   width: 28%;
-  /* border: 5px solid rgb(246, 177, 209);
-  border-radius: 5px; */
-  font-size: 13px;
+  border: 5px solid rgb(246, 177, 209);
+  border-radius: 5px; 
+  ont-size: 13px;
   padding: 10px 10px 10px 10px;
   margin: 10px 10px 10px 10px;
-}
+}  */
 
 .textbox {
   width: 300px;
-  height: 100px;
+  height: 150px;
 }
 
 li,a,p,button {
@@ -107,15 +108,15 @@ li,a,p,button {
 
 button {
   border-radius: none;
-  padding: 5px 20px;
+  padding: 5px 5px;
   background: white;
-  border: 2px solid black;
-  font-size: 1.1rem;
+  border: 1px solid black;
+  font-size: 12px;
 
 }
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -130,6 +131,22 @@ button {
   flex-basis: calc(30% - 10px);
   margin: 20px 0;
   border: 2px solid black;
+}
+
+.artist-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.artist-details {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .latest-grid-item h2,h3,h4,p,hr,button {
@@ -147,7 +164,7 @@ button {
 
 .latest {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 2rem;
   text-transform: uppercase;
 }
