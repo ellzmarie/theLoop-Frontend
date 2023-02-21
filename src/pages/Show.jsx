@@ -72,6 +72,14 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
                   value={editForm?.description}
                   onChange={handleChange}
                 /></p>
+                <p>category: <input
+                  className="textbox"
+                  type="text"
+                  name="category"
+                  placeholder="enter category"
+                  value={editForm?.category}
+                  onChange={handleChange}
+                /></p>
                 <button type="submit">update Artist</button>
               </form>
               <button id="DELETE" onClick={removeArtist}>

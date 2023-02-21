@@ -149,6 +149,12 @@ button {
   margin-right: auto;
 }
 
+form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .latest-grid-item h2,h3,h4,p,hr,button {
   margin: 1rem ;
 }

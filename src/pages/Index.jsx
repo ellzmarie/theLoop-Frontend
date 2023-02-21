@@ -7,6 +7,7 @@ export default function Index({ artist, createArtist }) {
     image: "",
     release_date: "",
     description: "",
+    category: "",
   });
 
   const handleChange = (evt) => {
@@ -24,6 +25,7 @@ export default function Index({ artist, createArtist }) {
       image: "",
       release_date: "",
       description: "",
+      category: "",
     });
   };
 
@@ -82,7 +84,14 @@ export default function Index({ artist, createArtist }) {
           value={form.description}
           onChange={handleChange}
         />
-        <input type="submit" value="Submit" />
+        <input
+          type="text"
+          name="category"
+          placeholder="category"
+          value={form.category}
+          onChange={handleChange}
+        />
+        <input type="submit" value="add entry" />
       </form>
       {artist ? loaded() : loading()}
     </section>

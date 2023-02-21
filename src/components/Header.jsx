@@ -10,7 +10,7 @@ function Header(props) {
     </nav>
 
     <div className="topnav">
-      <Link to="/artist/:id">music</Link>
+      <Link to="#">music</Link>
       <Link to="#">fashion</Link>
       <Link to="#">beauty</Link>
       <Link to="#">home stuff</Link>
