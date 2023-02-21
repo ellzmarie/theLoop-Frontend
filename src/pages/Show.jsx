@@ -31,8 +31,8 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
       <div className="wrapper">
         <h1 className='latest'>{artist?.name}</h1>
         <img className='artist-img' src={artist?.image} alt={artist?.name} />
-          <h4 className='artist-details'>{artist?.release_date}</h4>
-          <p>{artist?.description}</p>
+        <h4 className='artist-details'>{artist?.release_date}</h4>
+        <p>{artist?.description}</p>
       </div>
       <hr />
       <p></p>
@@ -81,10 +81,11 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
                   onChange={handleChange}
                 /></p>
                 <button type="submit">update Artist</button>
+
+                <button id="DELETE" onClick={removeArtist}>
+                  delete
+                </button>
               </form>
-              <button id="DELETE" onClick={removeArtist}>
-                delete
-              </button>
             </div>
           </div>
         </div>
