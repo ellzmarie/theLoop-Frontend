@@ -10,10 +10,9 @@ function Header(props) {
     </nav>
 
     <div className="topnav">
-      <Link to="#">music</Link>
-      <Link to="#">fashion</Link>
-      <Link to="#">beauty</Link>
-      <Link to="#">home stuff</Link>
+      <Link to="/music">music</Link>
+      <Link to="/fashion">fashion</Link>
+      <Link to="#/homedecor">home decor</Link>
     </div>
     </>
   );

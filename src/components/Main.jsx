@@ -2,6 +2,9 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Index from "../pages/Index";
 import Show from "../pages/Show";
+import Fashion from "../pages/Fashion";
+import HomeDecor from "../pages/HomeDecor";
+import Music from "../pages/Music"
 
 
 // This is the moment you have been waiting for, lets connect Django to React!
@@ -65,6 +68,18 @@ export default function Main() {
           path="/"
           element={<Index artist={artist} createArtist={createArtist} />}
         />
+        <Route
+          path="/fashion"
+          element={<Fashion artist={artist} />}
+        />
+        <Route
+          path="/homedecor"
+          element={<HomeDecor artist={artist} />}
+        />
+        <Route
+          path="/music"
+          element={<Music artist={artist} />}
+        />  
         <Route
           path="/artist/:id"
           element={

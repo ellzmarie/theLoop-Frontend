@@ -71,7 +71,7 @@
 ---
 ### Future Enhancements: 
 1. A search bar on each page.
-2. Authentication.
+2. Implement authentication for an admin to edit entries and users to engage through ranking and comments.
 3. Integrate Spotify / SoundCloud / Apple Music on the Music page to hear preview of songs. 
 4. A ranking system and comments section for engagement.
 5. Dark / light mode.

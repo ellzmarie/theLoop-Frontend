@@ -112,7 +112,6 @@ button {
   background: white;
   border: 1px solid black;
   font-size: 12px;
-
 }
 
 .wrapper {
@@ -180,7 +179,6 @@ form {
       flex-basis: calc(45% - 10px);
   }
 }
-
 
 @media (max-width: 550px) {
   .latest-grid-item {

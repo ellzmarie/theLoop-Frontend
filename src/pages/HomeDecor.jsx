@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 
-export default function Fashion(){
+export default function HomeDecor(){
     return (
-        <h1>Fashion</h1>
+        <h1>Home Decor</h1>
 )}
