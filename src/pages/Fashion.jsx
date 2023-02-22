@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useParams, useNavigate } from "react-router";
-import { useState } from "react";
+// import { useParams, useNavigate } from "react-router";
+// import { useState } from "react";
 
 export default function Fashion({entry}){
     console.log(entry)
