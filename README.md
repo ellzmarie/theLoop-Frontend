@@ -1,6 +1,6 @@
 # theLOOP
 
-### theLOOP is a full CRUD web application for people who love hella good music and fashion. 
+### theLOOP is a full CRUD web application blog for people who love hella good music, lifestyle fashion and unique home stuff. 
 ---
 ### SCREENSHOTS GO HERE
 #### ![banner](./img/Banner.jpeg)
@@ -13,26 +13,65 @@
 3. SQL
 4. VSCODE
 ---
-### Site info:
-Trello Board: https://trello.com/b/uXG8y6VI/theloop
+### Links:
 
-[Link to live site](Netlify link goes here)
+[Click here to view the live site](https://extraordinary-kringle-16363a.netlify.app/)
+
+- [Trello Board](https://trello.com/b/uXG8y6VI/theloop)
+- [Github Frontend](https://github.com/ellzmarie/theLoop-Frontend)
+- [Github Backend](https://github.com/ellzmarie/theLoop-Backend)
 
 ---
-### ERD
+### Entity Relationship Diagrams
+
+**Music**
+
+<table>
+  <th colspan="2" style="text-align:center">Artist</th>
+  <tr>
+    <td>id</td>
+    <td>primary key</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>image</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>release_date</td>
+    <td>date</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>string</td>
+  </tr>
+    <tr>
+    <td>category</td>
+    <td>string</td>
+  </tr>
+  <tr>
+    <td>created_at</td>
+    <td>datetime</td>
+  </tr>
+  <tr>
+    <td>updated_at</td>
+    <td>datetime</td>
+  </tr>
+</table>
+
 ---
 ### Wireframes
-### ![wireframe](./img/IMG_75636.jpg)
+### ![wireframe](./img/loop1.png)
+### ![wireframe](./img/loop2.png)
+
 
 ---
 ### Future Enhancements: 
-1. Description of any future enhancements planned.
-2. Description of any future enhancements planned.
-3. Description of any future enhancements planned.
-4. Description of any future enhancements planned.
-5. Description of any future enhancements planned.
-6. Description of any future enhancements planned.
-7. Description of any future enhancements planned.
-8. Description of any future enhancements planned.
-9. Description of any future enhancements planned.
-10. Description of any future enhancements planned.
+1. A search bar on each page.
+2. Authentication.
+3. Integrate Spotify / SoundCloud / Apple Music on the Music page to hear preview of songs. 
+4. A ranking system and comments section for engagement.
+5. Dark / light mode.
