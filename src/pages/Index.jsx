@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Index({ artist, createArtist }) {
+export default function Index({ entry, createArtist }) {
   const [form, setForm] = useState({
     name: "",
     image: "",
@@ -31,19 +31,19 @@ export default function Index({ artist, createArtist }) {
 
   // loaded function
   const loaded = () =>
-    artist.map((artist) => (
+  entry.map((entry) => (
       <div className='main-content'>
         <div className='wrapper'>
-          <div key={artist.id}>
+          <div key={entry.id}>
             <div className='latest-grid'>
               <div className='latest-grid-item'>
-                <Link to={`/artist/${artist.id}`}>
-                  <h2 className='latest-grid'>{artist.name}</h2>
+                <Link to={`/artist/${entry.id}`}>
+                  <h2 className='latest-grid'>{entry.name}</h2>
                 </Link>
-                <img src={artist.image} alt={artist.name} />
-                <h3>{artist.release_date}</h3>
+                <img src={entry.image} alt={entry.name} />
+                <h3>{entry.release_date}</h3>
                 <hr />
-                <h4>{artist.description}</h4>
+                <h4>{entry.description}</h4>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Index({ artist, createArtist }) {
         />
         <input type="submit" value="add entry" />
       </form>
-      {artist ? loaded() : loading()}
+      {entry ? loaded() : loading()}
     </section>
   );
 }

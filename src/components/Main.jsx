@@ -4,7 +4,7 @@ import Index from "../pages/Index";
 import Show from "../pages/Show";
 import Fashion from "../pages/Fashion";
 import HomeDecor from "../pages/HomeDecor";
-import Music from "../pages/Music"
+import Music from "../pages/Music";
 
 
 // This is the moment you have been waiting for, lets connect Django to React!
@@ -12,13 +12,33 @@ const URL = 'http://localhost:8000/artist/'
 
 
 export default function Main() {
-  const [artist, setArtist] = useState([]);
+  const [entry, setEntry] = useState([]);
+  const [category, setCategory] = useState({
+    music: "",
+    fashion: "",
+    homedecor: "",
+  });
+  // const [fashion, setFashion] = useState([]);
+  // const [homedecor, setHomeDecor] = useState([]);
+
 
   // INDEX
   const getArtist = async () => {
     const response = await fetch(URL)
     const data = await response.json()
-    setArtist(data)
+    setEntry(data)
+
+
+    let music = data.filter((entry) => entry.category === "music")
+    let fashion = data.filter((entry) => entry.category === "fashion")
+    let homedecor = data.filter((entry) => entry.category === "homedecor")
+    setCategory({
+      ...category,
+      music: music,
+      fashion: fashion,
+      homedecor: homedecor,      
+    })
+
 }
 
   // CREATE
@@ -66,25 +86,25 @@ export default function Main() {
       <Routes>
         <Route
           path="/"
-          element={<Index artist={artist} createArtist={createArtist} />}
+          element={<Index entry={entry} createArtist={createArtist} />}
         />
         <Route
           path="/fashion"
-          element={<Fashion artist={artist} />}
+          element={<Fashion entry={category.fashion} />}
         />
         <Route
           path="/homedecor"
-          element={<HomeDecor artist={artist} />}
+          element={<HomeDecor entry={category.homedecor} />}
         />
         <Route
           path="/music"
-          element={<Music artist={artist} />}
+          element={<Music entry={category.music} />}
         />  
         <Route
           path="/artist/:id"
           element={
             <Show
-              artists={artist}
+            entries={entry}
               deleteArtist={deleteArtist}
               updateArtist={updateArtist}
             />

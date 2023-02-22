@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 
-export default function Show({ artists, updateArtist, deleteArtist }) {
+export default function Show({ entries, updateArtist, deleteArtist }) {
   const { id } = useParams();
-  const artist = artists.find((artist) => parseInt(artist.id) === parseInt(id));
+  const entry = entries.find((entry) => parseInt(entry.id) === parseInt(id));
   const navigate = useNavigate();
 
-  const [editForm, setEditForm] = useState(artist);
+  const [editForm, setEditForm] = useState(entry);
 
   const handleChange = (evt) => {
     setEditForm({
@@ -29,10 +29,10 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
   return (
     <div className="main-content">
       <div className="wrapper">
-        <h1 className='latest'>{artist?.name}</h1>
-        <img className='artist-img' src={artist?.image} alt={artist?.name} />
-        <h4 className='artist-details'>{artist?.release_date}</h4>
-        <p>{artist?.description}</p>
+        <h1 className='latest'>{entry?.name}</h1>
+        <img className='artist-img' src={entry?.image} alt={entry?.name} />
+        <h4 className='artist-details'>{entry?.release_date}</h4>
+        <p>{entry?.description}</p>
       </div>
       <hr />
       <p></p>
@@ -64,11 +64,11 @@ export default function Show({ artists, updateArtist, deleteArtist }) {
                   value={editForm?.release_date}
                   onChange={handleChange}
                 /></p>
-                <p>artist info: <input
+                <p>info: <input
                   className="textbox"
                   type="text"
                   name="description"
-                  placeholder="enter artist info"
+                  placeholder="enter info"
                   value={editForm?.description}
                   onChange={handleChange}
                 /></p>

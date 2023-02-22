@@ -12,7 +12,7 @@ function Header(props) {
     <div className="topnav">
       <Link to="/music">music</Link>
       <Link to="/fashion">fashion</Link>
-      <Link to="#/homedecor">home decor</Link>
+      <Link to="/homedecor">home decor</Link>
     </div>
     </>
   );
