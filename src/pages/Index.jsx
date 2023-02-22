@@ -42,6 +42,7 @@ export default function Index({ entry, createArtist }) {
                 </Link>
                 <img src={entry.image} alt={entry.name} />
                 <h3>{entry.release_date}</h3>
+                <h5>{entry.category}</h5>
                 <hr />
                 <h4>{entry.description}</h4>
               </div>
