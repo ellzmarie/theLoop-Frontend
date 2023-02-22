@@ -15,7 +15,7 @@ I used the following technologies to build this blog:
 ---
 ### Links
 
-Feel free to [click here to view the live site](https://extraordinary-kringle-16363a.netlify.app/). You can view additional links below:
+Feel free to [click here to view the live site](https://clever-sunburst-c2fe4a.netlify.app/). You can view additional links below:
 
 - [Trello Board](https://trello.com/b/uXG8y6VI/theloop)
 - [Github Frontend](https://github.com/ellzmarie/theLoop-Frontend)
