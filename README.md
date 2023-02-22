@@ -1,11 +1,9 @@
 # theLOOP
 
 ### theLOOP is a full CRUD web application blog for people who love hella good music, lifestyle fashion and unique home stuff. 
----
-### SCREENSHOTS GO HERE
-#### ![banner](./img/Banner.jpeg)
-#### ![main2](./img/Main.jpeg)
-#### ![show](./img/Show.jpeg)
+
+#### ![loop3](./img/loop3.png)
+
 ---
 ### Technologies Used:
 1. Django
@@ -22,7 +20,7 @@
 - [Github Backend](https://github.com/ellzmarie/theLoop-Backend)
 
 ---
-### Entity Relationship Diagrams
+### Entity Relationship Diagram
 
 **Music**
 
