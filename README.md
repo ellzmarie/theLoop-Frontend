@@ -5,15 +5,17 @@
 #### ![loop3](./img/loop3.png)
 
 ---
-### Technologies Used:
+### Technologies Used
+
+I used the following technologies to build this blog: 
 1. Django
 2. REACT
 3. SQL
 4. VSCODE
 ---
-### Links:
+### Links
 
-[Click here to view the live site](https://extraordinary-kringle-16363a.netlify.app/)
+Feel free to [click here to view the live site](https://extraordinary-kringle-16363a.netlify.app/). You can view additional links below:
 
 - [Trello Board](https://trello.com/b/uXG8y6VI/theloop)
 - [Github Frontend](https://github.com/ellzmarie/theLoop-Frontend)
@@ -65,9 +67,11 @@
 ### ![wireframe](./img/loop1.png)
 ### ![wireframe](./img/loop2.png)
 
-
 ---
-### Future Enhancements: 
+### Future Enhancements 
+
+I would like to continue to work on this project in the future and implement some enhancements to the blog, such as:
+
 1. A search bar on each page.
 2. Implement authentication for an admin to edit entries and users to engage through ranking and comments.
 3. Integrate Spotify / SoundCloud / Apple Music on the Music page to hear preview of songs. 
