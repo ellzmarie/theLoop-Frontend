@@ -10,7 +10,7 @@
 I used the following technologies to build this blog: 
 1. Django
 2. REACT
-3. SQL
+3. PostgreSQl
 4. VSCODE
 ---
 ### Links
