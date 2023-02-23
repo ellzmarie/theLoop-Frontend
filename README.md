@@ -1,6 +1,6 @@
 # theLOOP
 
-### theLOOP is a full CRUD web application blog for people who love hella good music, lifestyle fashion and unique home stuff. 
+### theLOOP is a full CRUD blog web application for people who love hella good music, lifestyle fashion and unique home stuff. 
 
 #### ![loop3](./img/loop3.png)
 
